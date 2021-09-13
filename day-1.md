@@ -29,3 +29,11 @@ Other examples : [Cardano](https://cardano.org/), [EOS](https://eos.io/), [TRON]
 * Which Stack we gonna use? Solidarity, Ethereum etc.
 * Duration of training and what all are the training material
 * 
+
+### Tasks
+* Setup [Hardhat](https://hardhat.org/) Developer Environment
+    
+    * [Hardhat Documentation](https://hardhat.org/getting-started/)
+    
+    * [Ether.js](https://docs.ethers.io/v5/) : The ethers.js library aims to be a complete and compact library for interacting with the Ethereum Blockchain and its ecosystem.
+    * [Waffle](https://ethereum-waffle.readthedocs.io/en/latest/) : Waffle is a library for writing and testing smart contracts.
