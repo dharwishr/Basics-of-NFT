@@ -9,6 +9,8 @@ Non-Fungible Tokens (NFT) : is a unit of data stored on a digital ledger, called
 
 Other examples : [Cardano](https://cardano.org/), [EOS](https://eos.io/), [TRON](https://tron.network/)
 
+### Some useful links 
+[Hashlips](https://www.youtube.com/channel/UC1LV4_VQGBJHTJjEWUmy8nA) : NFT generator 
 
 [Metaplex](https://docs.metaplex.com/) :
 
@@ -19,7 +21,7 @@ Other examples : [Cardano](https://cardano.org/), [EOS](https://eos.io/), [TRON]
 [How to Build ERC-721 NFTs with IPFS](https://medium.com/pinata/how-to-build-erc-721-nfts-with-ipfs-e76a21d8f914) :
 
 ### Questions?
-* NFT Collection selling / trading platform or also NFT generating platform
+*  ~~NFT Collection selling / trading platform or also NFT generating platform~~ 
 * Which Stack we gonna use? Solidarity, Ethereum etc.
 * Duration of training and what all are the training material
 * 
