@@ -102,6 +102,44 @@ function testFunction)(string memory _name, uint _amount) public{
 ```
 
 
+
+* Its takes  parameter, a `string` and a `uint`
+* Specifying visibility of function to other contracts we use `public`
+    * Default visibility will be `public`, you can also use `private` to make its scope to specific contract but you have to follow one naming convention rule that `private` functions name should start with  "_" (underscore)
+    
+    Example 
+    ```
+    function _privateFunction(string memory _name, uint _number) private{
+
+    }
+    ```
+* `memory` attribute used to specify use temporary storage. [Here is why](https://docs.soliditylang.org/en/v0.4.24/frequently-asked-questions.html#what-is-the-memory-keyword-what-does-it-do)
+
+### Playing with structs
+```
+struct Person{
+    uint age;
+    string name;
+}
+
+// define a array named people 
+
+Person[] public people;
+
+// created a person and assigned to satoshi
+
+Person satoshi = Person(172,"Satoshi");
+
+// Push the satoshi to people array
+
+people.push(satoshi);
+```
+
+
+
+___
+
+
 ### Declareing a read function 
 
 ```
