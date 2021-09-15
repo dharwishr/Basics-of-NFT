@@ -115,7 +115,7 @@ function testFunction)(string memory _name, uint _amount) public{
     ```
 * `memory` attribute used to specify use temporary storage. [Here is why](https://docs.soliditylang.org/en/v0.4.24/frequently-asked-questions.html#what-is-the-memory-keyword-what-does-it-do)
 
-### Playing with structs
+## Playing with structs
 ```
 struct Person{
     uint age;
@@ -134,21 +134,45 @@ Person satoshi = Person(172,"Satoshi");
 
 people.push(satoshi);
 ```
+## Declareing a read function 
 
+```
+string greeting = "Hello World";
 
+function sayHello() public returns (string memory) {
+  return greeting;
+}
+
+```
+Here we are defined a function named `sayHello()` to return the string stored in `value` also we declared `public` modifier used to set the visibility of the function to be Public. And it returns a `String` Datatype from the function.
+
+* Use `view` modifier to make function immutable / non modifiable 
+    ```
+    function sayHello() public view returns (string memory) {
+    ```
+
+### Keccak256
+Its an hash function, version of SHA3. It maps an input into random hexadecimal 256bit number
+* `keccak256` it expects single parameter of type `bytes`
+* Not secure enough for production level 
+
+Example
+```
+keccak256(abi.encodePacked("aaaab"))
+```
+### Typecasting
+Convert between datatype
+```
+uint a = 5
+unit8 b = 10
+
+uint8 c = uint8(a) + b
+```
+
+## Events
 
 ___
 
-
-### Declareing a read function 
-
-```
-function get() public view returns(string){
-    return value;
-}
-```
-Here we are defined a function named `get` to return the string stored in `value` also we declared `public` modifier used to set the visibility of the function to be Public. And it returns a `String` Datatype from the function.
-`view` Modifier used to make the function immutable.
 
 ```
 contract MyContract {
