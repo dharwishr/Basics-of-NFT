@@ -86,4 +86,47 @@ contract sandwichFactory {
     }
 }
 ```
+## Visibility
+* Internal : Same as private expect that its also accessible to contracts that inherits from this contracts.
+* External : similar to public, expect that these functions can ONLY be called outside th contract. They acnt be called by other functions inside the same contract.
+## Define an interface
+```
+contract NumberInterface {
+  function getNum(address _myAddress) public view returns (uint);
+};
 
+```
+Defined a interface named as `NumberInterface` 
+```
+contract MyContract{
+    address NumberInterfaceAddress = 0xab8459 ...... // Some address of contract on ethereum
+    NumberInterface numberContract = NumberInterface(NumberInterfaceAddress); //
+    function someFunction() public{
+        // Calling getNum from that contract 
+        uint num = numberContract.getNum(msg.sender);
+        // and use the num here
+    }
+}
+```
+Here we defined another contract and inside that we assigned the interface contract to `numberContract` and used inside a function which we defined in the new contract
+
+In `Solidity` we can return more than one value
+```
+function multipleReturns() returns(uint a, uint b, uint c){
+    return (1, 2, 3);
+}
+
+function processMultipleReturn() external{
+    uint a;
+    uint b;
+    uint c;
+    // Multiple assignment
+    (a, b, c) = multipleReturns();
+}
+
+function onlyOneReturnCall() external{
+    uint c;
+    (,,c) = multipleReturns();
+}
+
+```
