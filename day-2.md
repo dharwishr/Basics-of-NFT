@@ -1,4 +1,5 @@
 ## Learn Solidity
+### [Learn JavaScript then learn Solidity, change my mind!](https://academy.bigbinary.com/learn-javascript) 
 ## Define Solidity Version
 Source code should start with a `version pragma` to declare the version of solidity compiler this code should use,
 ```
