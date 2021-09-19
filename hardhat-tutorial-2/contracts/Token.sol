@@ -1,4 +1,6 @@
 pragma solidity <= 0.8.0;
+
+import 'hardhat/console.sol';
 contract Token{
     string public name = 'My Hardhat Token';
     string public symbol = 'MHT';
@@ -11,13 +13,13 @@ contract Token{
         owner = msg.sender;
     }
     
-    function transfer(address to, uint amount) external{
-        require(balances[msg.sender] >= amount, 'Not enough money');
+    function transfer(address to, uint amount) external {
+        require(balances[msg.sender] >= amount, "Not enough tokens");
         balances[msg.sender] -= amount;
         balances[to] += amount;
     }
 
-    function balanceOf(address account) external view returns(uint) {
+    function balanceOf(address account) external view returns (uint256) {
         return balances[account];
     }
 }
