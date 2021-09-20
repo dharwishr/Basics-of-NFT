@@ -36,14 +36,14 @@ describe('Token contract', () => {
         });
         it('Should update balances after transfer', async ()=>{
             const initialOwnerBalance = await token.balanceOf(owner.address);
-            await token.transfer(addr1.address, 100);
-            await token.transfer(addr2.address, 50);
+            await token.transfer(addr1.address, 10000);
+            await token.transfer(addr2.address, 5000);
             const finalOwnerBalance = await token.balanceOf(owner.address);
-            expect (finalOwnerBalance).to.equal(initialOwnerBalance - 150);
+            expect (finalOwnerBalance).to.equal(initialOwnerBalance - 15000);
             const addr1Balance = await token.balanceOf(addr1.address);
-            expect(addr1Balance).to.equal(100);
+            expect(addr1Balance).to.equal(10000);
             const addr2Balance = await token.balanceOf(addr2.address);
-            expect(addr2Balance).to.equal(50);
+            expect(addr2Balance).to.equal(5000);
         });
     });
 });
