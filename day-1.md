@@ -9,6 +9,8 @@ Minting basically refers to the process of turning digital art into a part of th
 * Ethereum is a blockchain, Ether is balance in your account more like currency
 * Each one have address like `0x0cE446255506E92DF41614C46F1d6df9Cc969183`
 
+[What is ethereum, What is blockchain... A great documentation by ethereum.org](https://ethereum.org/en/developers/docs/intro-to-ethereum/)
+
 
 
 Other examples : [Cardano](https://cardano.org/), [EOS](https://eos.io/), [TRON](https://tron.network/)
